@@ -6,11 +6,12 @@
     <div class="header">
         <h1>About Us</h1>
         <div class="logo">
-            <a href="">
-                <img src="/Users/hemakshbreja/Programming/astro exploring/avions/avions-on-web/public/Avions_logontext.jpeg" alt="Logo_to_home" />
+            <a href="Home.astro">
+                <img id="homepage_logo" src="avions-on-web/public/Avions_logontext.jpeg" alt="Logo_to_home" />
             </a>
         </div>
     </div>
+    <div class="line"></div>
     <div class="body">
         <div class="maincontent">
             <p>
@@ -22,24 +23,25 @@
                 odio! Similique in nostrum obcaecati, ipsa repudiandae adipisci
                 dignissimos consequuntur nihil corporis at quaerat minus
                 provident maiores.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae nulla, placeat eaque optio, modi eum corrupti rerum commodi, tempora odio nemo similique quae velit impedit eius sapiente amet facere incidunt consequatur minus omnis a dolorem consequuntur. Sapiente odio facilis cupiditate sequi. Iusto, delectus? Facere nobis minima, quis fugit expedita at quae, unde amet ab repudiandae quas a corrupti architecto natus quos? Quidem rem quos tempore! Quaerat, quam delectus ipsam exercitationem eveniet at hic esse itaque voluptatibus omnis possimus aspernatur. Amet odio repudiandae facilis est delectus sed debitis autem reiciendis non beatae excepturi laudantium atque nam deleniti harum assumenda, et odit vel dolores at fugit, consequatur illo veniam? Harum aspernatur beatae, ratione id facilis ad odit obcaecati sunt nostrum consectetur, dolorem impedit error rem iste laboriosam velit, exercitationem quo modi est natus similique minus assumenda. Nostrum asperiores enim modi eaque perspiciatis voluptatibus dolorem consequatur facere vitae quisquam similique, error non fugiat.ˀ
             </p>
         </div>
         <div class="experience">
             <div class="exp_left">
-                <p><h5>Glazing content</h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi facilis sapiente placeat accusamus? Sed labore temporibus cupiditate numquam? Eius atque labore omnis voluptatibus saepe iste, beatae quidem ratione reprehenderit dignissimos. Minima quo vel labore veniam consequatur? Odit asperiores maxime, accusamus quis dolorum nostrum quaerat enim iusto quod impedit ipsa ipsum?</p>
+                <p><h3>Glazing content</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi facilis sapiente placeat accusamus? Sed labore temporibus cupiditate numquam? Eius atque labore omnis voluptatibus saepe iste, beatae quidem ratione reprehenderit dignissimos. Minima quo vel labore veniam consequatur? Odit asperiores maxime, accusamus quis dolorum nostrum quaerat enim iusto quod impedit ipsa ipsum?</p>
             </div>
             <div class="exp_right">
                 <a href="">
-                    <img src="Avions_logontext.jpeg" alt="glazing pics">
+                    <img id = "experience_pic" src="Avions_logontext.jpeg" alt="glazing pics">
                 </a>
             </div>
         </div>
         <div class="al">
             <h3>Our Alluminis</h3>
             <div class="al_scroll">
-                <div class="Avions-24">
+                <div class="Avions-25">
                     <img src="" alt="pic" />
-                    <h3>Avions-24</h3>    
+                    <h3>Avions-25</h3>    
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
                 </div>
                 <div class="Avions-24">
@@ -115,5 +117,98 @@
         box-sizing: border-box;
     }
 
+    main {
+        font-family: 'Arial', sans-serif;
+        color: #F2F2F2;
+        position: relative;
+        background-color: #011126;
+    }
+
+    .header { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        height: 8vh;
+        background-color: #011126ee;
+        color: #F2F2F2;
+        position: sticky;
+    }
+
+    .header h1{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    #homepage_logo {
+        width: 150px;
+        height: 70px;
+        object-fit: contain;
+    }
+
+    .line{
+        width: 100%;
+        height: 2px;
+        background-color: #F2F2F2;
+        margin: 0;
+    }
+
+    .maincontent{
+        height: auto;
+        width: 100vw;
+        padding: 40px 20px 90px 20px;
+
+    }
+
+    .experience{
+        display: flex;
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        width: 100vw;
+        height: auto;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    #experience_pic{
+        width: 30vw;
+        /* height: 27vh; */
+        object-fit: cover;
+    }
+
+    .exp_left{
+        /* margin: 10px; */
+    }
+
+
+    .al_scroll{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: auto;
+        overflow-behaviour : contain;
+        width: auto;
+        height: auto;
+        padding: 40px;
+        position: relative;
+        overflow: hidden;
+        gap: 20px;
+    }
+
+    .al{
+        width: 100vw;
+        padding: 20px;
+    }
+
+    .al_scroll div{
+        /* display: flex; */
+        border: 1px solid #F2F2F2;
+        height: 40vh;
+        width: 40vw;
+        position: relative;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+
+    }
 
 </style>
