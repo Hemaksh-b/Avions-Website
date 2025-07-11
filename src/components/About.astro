@@ -3,12 +3,14 @@
 ---
 
 <main>
-    <div class="header">
-        <h1>About Us</h1>
-        <div class="logo">
-            <a href="Home.astro">
-                <img id="homepage_logo" src="avions-on-web/public/Avions_logontext.jpeg" alt="Logo_to_home" />
-            </a>
+    <div class="outnav">
+        <div class="header">
+            <h1>About Us</h1>
+            <div class="logo">
+                <a href="Home.astro">
+                    <img id="homepage_logo" src="avions-on-web/public/Avions_logontext.jpeg" alt="Logo_to_home" />
+                </a>
+            </div>
         </div>
     </div>
     <div class="line"></div>
@@ -39,52 +41,76 @@
         <div class="al">
             <h3>Our Alluminis</h3>
             <div class="al_scroll">
-                <div class="Avions-25">
-                    <img src="" alt="pic" />
-                    <h3>Avions-25</h3>    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
-                </div>
-                <div class="Avions-24">
-                    <img src="" alt="pic" />
-                    <h3>Avions-24</h3>    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
-                </div>
-                <div class="Avions-23">
-                    <img src="" alt="pic" />
-                    <h3>Avions-23</h3>    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
-                </div>
-                <div class="Avions-22">
-                    <img src="" alt="pic" />
-                    <h3>Avions-22</h3>    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
-                </div>
-                <div class="Avions-21">
-                    <img src="" alt="pic" />
-                    <h3>Avions-21</h3>    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
-                </div>
+                <a href="">
+                    <div class="Avions-25">
+                        <img src="" alt="pic" />
+                        <h3>Avions-25</h3>    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="Avions-24">
+                        <img src="" alt="pic" />
+                        <h3>Avions-24</h3>    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="Avions-23">
+                        <img src="" alt="pic" />
+                        <h3>Avions-23</h3>    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="Avions-22">
+                        <img src="" alt="pic" />
+                        <h3>Avions-22</h3>    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="Avions-21">
+                        <img src="" alt="pic" />
+                        <h3>Avions-21</h3>    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="dump">
             <h3>Memory Dump</h3>
-            <div class="dump_item one">
-                <img src="" alt="" />
-            </div>
-            <div class="dump_item two">
-                <img src="" alt="" />
-            </div>
-            <div class="dump_item three">
-                <img src="" alt="" />
-            </div>
-            <div class="dump_item four">
-                <img src="" alt="" />
-            </div>
-            <div class="dump_item five">
-                <img src="" alt="" />
-            </div>
-            <div class="dump_item six">
-                <img src="" alt="" />
+            <div class="picdump">
+                <a href="">
+                    <div class="dump_item one">
+                        <img src="" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="dump_item two">
+                        <img src="" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="dump_item three">
+                        <img src="" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="dump_item four">
+                        <img src="" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="dump_item five">
+                        <img src="" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="dump_item six">
+                        <img src="" alt="" />
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -115,6 +141,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        /* position: relative; */
     }
 
     main {
@@ -132,7 +159,12 @@
         height: 8vh;
         background-color: #011126ee;
         color: #F2F2F2;
-        position: sticky;
+        position: fixed;
+        z-index: 1000;
+        width: 100vw;
+        top: 0px;
+        left: 0px;
+        /* display: block; */
     }
 
     .header h1{
@@ -141,8 +173,8 @@
     }
     
     #homepage_logo {
-        width: 150px;
-        height: 70px;
+        width: auto;
+        height: 6vh;
         object-fit: contain;
     }
 
@@ -151,6 +183,8 @@
         height: 2px;
         background-color: #F2F2F2;
         margin: 0;
+        position: fixed;
+        top: 8vh;
     }
 
     .maincontent{
@@ -186,17 +220,15 @@
         align-items: center;
         justify-content: center;
         overflow-x: auto;
-        overflow-behaviour : contain;
-        width: auto;
-        height: auto;
-        padding: 40px;
-        position: relative;
-        overflow: hidden;
+        /* width: 100%; */
+        /* height: auto; */
+        padding: 20px;
+        /* position: relative; */
         gap: 20px;
     }
 
     .al{
-        width: 100vw;
+        width: 100%;
         padding: 20px;
     }
 
@@ -204,11 +236,34 @@
         /* display: flex; */
         border: 1px solid #F2F2F2;
         height: 40vh;
-        width: 40vw;
-        position: relative;
+        min-width: 20vw;
+        /* position: f; */
         scroll-behavior: smooth;
         scrollbar-width: none;
 
+    }
+
+    .dump {
+        padding: 20px;
+    }
+    
+    .picdump{
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .dump_item{
+        width: 40vh;
+        height: 30vh;
+        border: 1px solid #F2F2F2;
+
+    }
+
+    .outnav{
+        display: block;
+        margin: 8vh;
     }
 
 </style>
