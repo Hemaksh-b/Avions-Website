@@ -2,268 +2,1096 @@
 
 ---
 
-<main>
-    <div class="outnav">
-        <div class="header">
-            <h1>About Us</h1>
-            <div class="logo">
-                <a href="Home.astro">
-                    <img id="homepage_logo" src="avions-on-web/public/Avions_logontext.jpeg" alt="Logo_to_home" />
-                </a>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us | Avions</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span>About us</span>
+                </div>
+                <button class="nav-back-btn" onclick="goBack()">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Home</span>
+                </button>
             </div>
-        </div>
-    </div>
-    <div class="line"></div>
-    <div class="body">
-        <div class="maincontent">
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Aliquid sunt a eum, hic deserunt assumenda. Dolore harum placeat
-                ad nulla minima vitae est quis! Alias eligendi perspiciatis
-                deleniti accusamus impedit ad explicabo est minus dicta
-                cupiditate voluptatibus harum, animi ut fuga repellendus, illum
-                odio! Similique in nostrum obcaecati, ipsa repudiandae adipisci
-                dignissimos consequuntur nihil corporis at quaerat minus
-                provident maiores.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae nulla, placeat eaque optio, modi eum corrupti rerum commodi, tempora odio nemo similique quae velit impedit eius sapiente amet facere incidunt consequatur minus omnis a dolorem consequuntur. Sapiente odio facilis cupiditate sequi. Iusto, delectus? Facere nobis minima, quis fugit expedita at quae, unde amet ab repudiandae quas a corrupti architecto natus quos? Quidem rem quos tempore! Quaerat, quam delectus ipsam exercitationem eveniet at hic esse itaque voluptatibus omnis possimus aspernatur. Amet odio repudiandae facilis est delectus sed debitis autem reiciendis non beatae excepturi laudantium atque nam deleniti harum assumenda, et odit vel dolores at fugit, consequatur illo veniam? Harum aspernatur beatae, ratione id facilis ad odit obcaecati sunt nostrum consectetur, dolorem impedit error rem iste laboriosam velit, exercitationem quo modi est natus similique minus assumenda. Nostrum asperiores enim modi eaque perspiciatis voluptatibus dolorem consequatur facere vitae quisquam similique, error non fugiat.ˀ
-            </p>
-        </div>
-        <div class="experience">
-            <div class="exp_left">
-                <p><h3>Glazing content</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi facilis sapiente placeat accusamus? Sed labore temporibus cupiditate numquam? Eius atque labore omnis voluptatibus saepe iste, beatae quidem ratione reprehenderit dignissimos. Minima quo vel labore veniam consequatur? Odit asperiores maxime, accusamus quis dolorum nostrum quaerat enim iusto quod impedit ipsa ipsum?</p>
+        </nav>
+
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <img src="bg" alt="avions-back" class="hero-video">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">ABOUT US</h1>
+                        <div class="hero-subtitle">
+                            <div class="logo-icon">
+                                <img
+                                    src="/Users/hemakshbreja/Programming/astro exploring/avions/avions-on-web/src/components/Avions_Logo.png"
+                                    alt="logo"
+                                    class="fas"
+                                />
+                            </div>
+                            <span>Avions</span>
+                        </div>
+                        <p class="hero-description">
+                            We think, We fly, We Rule the sky.
+                        </p>
+                    </div>
+                    <div class="hero-visual"></div>
+                </div>
+            </section>
+
+            <!-- About Description -->
+            <section class="about-description">
+                <div class="container">
+                    <div class="description-content">
+                        <div class="section-header">
+                            <span class="section-badge">Who We Are</span>
+                            <h2>Lorem ipsum dolor sit.</h2>
+                        </div>
+                        <div class="description-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente exercitationem debitis, adipisci molestias est iusto totam? Quidem ducimus corporis delectus autem aperiam quasi impedit vitae, ipsam, vero nemo omnis voluptatem, sint amet quia repellendus inventore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quas non porro eaque officiis! Officiis pariatur quidem rem eos unde blanditiis quibusdam sapiente. Nisi quos vitae commodi aspernatur exercitationem impedit fugit blanditiis doloribus, culpa architecto! Perferendis quibusdam sed nostrum quidem!
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti delectus similique exercitationem sunt soluta, quos, in doloribus vero perferendis, minus accusantium? Ducimus fugiat earum atque repellat tempore fugit nesciunt cumque nostrum eaque aliquam neque optio nulla non aspernatur odio, reiciendis dolor soluta minus, exercitationem quis ad harum sit, assumenda corrupti? Iure, distinctio cupiditate! At incidunt impedit necessitatibus cumque nulla aspernatur!
+                            </p>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">num</div>
+                                <div class="stat-label">Quality</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">Number</div>
+                                <div class="stat-label">
+                                    quality
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">Number</div>
+                                <div class="stat-label">Quality</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="experience-section">
+                <div class="container">
+                    <div class="experience-content">
+                        <div class="experience-text">
+                            <div class="section-header">
+                                <span class="section-badge">Our Journey</span>
+                                <h3>Experience Excellence</h3>
+                            </div>
+                            <p>
+                                From workshops and seminars to hands-on projects
+                                and industry collaborations, our experience
+                                spans across various domains. We pride ourselves
+                                on creating opportunities that matter and
+                                experiences that last a lifetime.
+                            </p>
+                            <div class="experience-highlights">
+                                <div class="hoverbun">
+
+                                    <a href="">
+                                        <div class="highlight-item">
+                                            Innovation Workshops
+                                        </div>
+                                        <a href="">
+                                    </div>
+                                </a>
+                                <div class="hoverbun">
+
+                                    <div class="highlight-item" >
+                                        
+                                        Mentorship Programs
+                                    </div>
+                                </a>
+                            </div>
+                                <div class="hoverbun">
+
+                                    <a href="">
+                                        <div class="highlight-item" >
+                                            Competition Success
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="experience-visual">
+                            <div
+                                class="collage-container"
+                                onclick="openExperience()"
+                            >
+                                <div class="collage-grid">
+                                    <div class="collage-item"></div>
+                                    <div class="collage-item"></div>
+                                    <div class="collage-item"></div>
+                                    <div class="collage-item"></div>
+                                </div>
+                                <a href="">
+
+                                    <div class="collage-overlay">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Visit the Gallery</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alumni Section -->
+            <section class="alumni-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">Our Legacy</span>
+                        <h3>Avions Alumni</h3>
+                        <p>
+                            Meet the brilliant minds who have shaped our journey
+                            and continue to inspire us
+                        </p>
+                    </div>
+                    <div class="alumni-container">
+                        <div class="alumni-scroll">
+                            <div
+                                class="alumni-card"
+                                onclick="viewMembers('2025')"
+                            >
+                                <div class="alumni-image">
+                                    <div class="alumni-gradient"></div>
+                                    <div class="alumni-year">2025</div>
+                                </div>
+                                <div class="alumni-content">
+                                    <h4>Avions '25</h4>
+                                    <p>Current Leaders</p>
+                                </div>
+                            </div>
+                            <div
+                                class="alumni-card"
+                                onclick="viewMembers('2024')"
+                            >
+                                <div class="alumni-image">
+                                    <div class="alumni-gradient"></div>
+                                    <div class="alumni-year">2024</div>
+                                </div>
+                                <div class="alumni-content">
+                                    <h4>Avions '24</h4>
+                                    <p>Recent Graduates</p>
+                                </div>
+                            </div>
+                            <div
+                                class="alumni-card"
+                                onclick="viewMembers('2023')"
+                            >
+                                <div class="alumni-image">
+                                    <div class="alumni-gradient"></div>
+                                    <div class="alumni-year">2023</div>
+                                </div>
+                                <div class="alumni-content">
+                                    <h4>Avions '23</h4>
+                                    <p>Industry Professionals</p>
+                                </div>
+                            </div>
+                            <div
+                                class="alumni-card"
+                                onclick="viewMembers('2022')"
+                            >
+                                <div class="alumni-image">
+                                    <div class="alumni-gradient"></div>
+                                    <div class="alumni-year">2022</div>
+                                </div>
+                                <div class="alumni-content">
+                                    <h4>Avions '22</h4>
+                                    <p>Founding Members</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Memory Section -->
+            <section class="memory-section">
+                <div class="container">
+                    <div class="memory-content">
+                        <div class="memory-text">
+                            <div class="section-header">
+                                <span class="section-badge">Memories</span>
+                                <h3>Memory Dump</h3>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sequi aspernatur eos optio enim laboriosam molestiae consequatur reiciendis cum expedita aut quae, sapiente mollitia ipsa dolor, odio exercitationem? Numquam sunt dolorum mollitia?
+                            </p>
+                        </div>
+                        <div class="memory-grid">
+                            <div
+                                class="memory-item"
+                                onclick="openMemory('Workshop 2024')">
+                                <div class="memory-overlay">
+                                    <i class="fas fa-users"></i> <!-- people -->
+                                    <span>Currently working</span>
+                                </div>
+                            </div>
+                            <a href="">
+
+                                <div
+                                class="memory-item"
+                                onclick="openMemory('Freshers Welcome')">
+                                <div class="memory-overlay">
+                                    <i class="fas"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 16V14L13 9V3.5C13 2.67 12.33 2 11.5 2S10 2.67 10 3.5V9L2 14V16L10 13.5V19L8 20.5V22L11.5 21L15 22V20.5L13 19V13.5L21 16Z" fill="currentColor"/>
+                                    </svg>
+                                </i> <!-- Plane -->
+                                
+                                <span>DDC-25</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+
+                        <div
+                        class="memory-item"
+                        onclick="openMemory('Hackathon Victory')"
+                        >
+                        <div class="memory-overlay">
+                            <i class="fas"><svg 
+                                width="24" 
+                                height="24" 
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                xmlns="http://www.w3.org/2000/svg"
+                                >
+                                <!-- Drone body -->
+                                <rect x="9" y="10" width="6" height="4" rx="1" fill="currentColor"/>
+                                
+                                <!-- Propellers -->
+                                <circle cx="6" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="18" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="18" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                
+                                <!-- Arms connecting body to propellers -->
+                                <line x1="9" y1="11" x2="6" y2="6" stroke="currentColor" stroke-width="1.5"/>
+                                <line x1="15" y1="11" x2="18" y2="6" stroke="currentColor" stroke-width="1.5"/>
+                                <line x1="9" y1="13" x2="6" y2="18" stroke="currentColor" stroke-width="1.5"/>
+                                <line x1="15" y1="13" x2="18" y2="18" stroke="currentColor" stroke-width="1.5"/>
+                                
+                                <!-- Camera/gimbal -->
+                                <circle cx="12" cy="14" r="1.5" fill="currentColor"/>
+                            </svg></i> <!-- drone -->
+                            <span>ADDC-25</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+
+                    <div
+                    class="memory-item"
+                    onclick="openMemory('Annual Meetup')"
+                    >
+                    <div class="memory-overlay">
+                        <i class="fas"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- PCB Board outline -->
+                            <rect x="2" y="2" width="20" height="20" rx="2" stroke="white" stroke-width="1.5" fill="none"/>
+                            
+                            <!-- Circuit traces -->
+                            <path d="M6 6h12" stroke="white" stroke-width="1" stroke-linecap="round"/>
+                            <path d="M6 9h8" stroke="white" stroke-width="1" stroke-linecap="round"/>
+                            <path d="M10 9v6" stroke="white" stroke-width="1" stroke-linecap="round"/>
+                            <path d="M6 12h12" stroke="white" stroke-width="1" stroke-linecap="round"/>
+                            <path d="M6 15h8" stroke="white" stroke-width="1" stroke-linecap="round"/>
+                            <path d="M6 18h12" stroke="white" stroke-width="1" stroke-linecap="round"/>
+                            <path d="M14 9v9" stroke="white" stroke-width="1" stroke-linecap="round"/>
+                            
+                            <!-- Circuit pads/components -->
+                            <circle cx="6" cy="6" r="1.5" fill="white"/>
+                            <circle cx="18" cy="6" r="1.5" fill="white"/>
+                            <circle cx="6" cy="18" r="1.5" fill="white"/>
+                            <circle cx="18" cy="18" r="1.5" fill="white"/>
+                            <rect x="12" y="8" width="2" height="2" fill="white" rx="0.5"/>
+                            <rect x="8" y="14" width="2" height="2" fill="white" rx="0.5"/>
+                        </svg></i> <!-- pcb -->
+                        <span>The Lab</span>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+
+                <div
+                class="memory-item"
+                onclick="openMemory('Tech Talk Series')"
+                >
+                <div class="memory-overlay">
+                    <i class="fas"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 14C13.66 14 15 12.66 15 11V5C15 3.34 13.66 2 12 2C10.34 2 9 3.34 9 5V11C9 12.66 10.34 14 12 14Z" fill="white"/>
+                        <path d="M19 11C19 15.42 15.42 19 11 19H13C17.42 19 21 15.42 21 11H19Z" fill="white"/>
+                        <path d="M5 11C5 15.42 8.58 19 13 19H11C6.58 19 3 15.42 3 11H5Z" fill="white"/>
+                        <path d="M12 19V22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M8 22H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg></i> <!-- microphone -->
+                    <span>At Mathworks</span>
+                </div>
             </div>
-            <div class="exp_right">
-                <a href="">
-                    <img id = "experience_pic" src="Avions_logontext.jpeg" alt="glazing pics">
-                </a>
-            </div>
-        </div>
-        <div class="al">
-            <h3>Our Alluminis</h3>
-            <div class="al_scroll">
-                <a href="">
-                    <div class="Avions-25">
-                        <img src="" alt="pic" />
-                        <h3>Avions-25</h3>    
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
+        </a>
+            <a href="">
+
+                                <div class="memory-item">
+                                    <div class="memory-overlay">
+                                        <i class="fas"></i>
+                                        <span>View more</span>
+                                    </div>
+                                </div>
+                            </a>        
+                        </div>
                     </div>
-                </a>
-                <a href="">
-                    <div class="Avions-24">
-                        <img src="" alt="pic" />
-                        <h3>Avions-24</h3>    
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-brand">
+                            <div class="footer-logo">
+                                <i class="fas fa-plane"></i>
+                                <span>Avions</span>
+                            </div>
+                            <p>
+                                Soaring beyond limits, building futures at PES
+                                University
+                            </p>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-section">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Experience</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-section">
+                                <h4>Connect</h4>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"
+                                        ><i class="fab fa-instagram"></i></a
+                                    >
+                                    <a href="#" class="social-link"
+                                        ><i class="fab fa-linkedin"></i></a
+                                    >
+                                    <a href="#" class="social-link"
+                                        ><i class="fab fa-twitter"></i></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </a>
-                <a href="">
-                    <div class="Avions-23">
-                        <img src="" alt="pic" />
-                        <h3>Avions-23</h3>    
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="Avions-22">
-                        <img src="" alt="pic" />
-                        <h3>Avions-22</h3>    
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="Avions-21">
-                        <img src="" alt="pic" />
-                        <h3>Avions-21</h3>    
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ab officiis nostrum impedit assumenda consequuntur tempora earum architecto recusandae!</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="dump">
-            <h3>Memory Dump</h3>
-            <div class="picdump">
-                <a href="">
-                    <div class="dump_item one">
-                        <img src="" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="dump_item two">
-                        <img src="" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="dump_item three">
-                        <img src="" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="dump_item four">
-                        <img src="" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="dump_item five">
-                        <img src="" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="dump_item six">
-                        <img src="" alt="" />
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="footer">
-            <div class="foot_left">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="foot_right">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</main>
+                </div>
+            </footer>
+        </main>
+
+        <style>
+            :root {
+                --primary-dark: #011126;
+                --primary-blue: #0568a6;
+                --primary-light: #0fb2f2;
+                --background: #f2f2f2;
+                --text-dark: #0d0d0d;
+                --white: #ffffff;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Inter", sans-serif;
+                background-color: var(--background);
+                color: var(--text-dark);
+                line-height: 1.6;
+                overflow-x: hidden;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            /* Navigation */
+            .navbar {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background: rgba(
+                    1,
+                    17,
+                    38,
+                    0.7
+                ); /* Increased transparency with lower opacity */
+                backdrop-filter: blur(
+                    10px
+                ); /* Retained blur for glass effect */
+                z-index: 1000;
+                padding: 15px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .nav-logo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(
+                    --white
+                ); /* White for contrast against transparent dark background */
+            }
+
+            .nav-logo i {
+                color: var(--primary-light);
+            }
+
+            .nav-back-btn {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                background: linear-gradient(
+                    135deg,
+                    var(--primary-blue),
+                    var(--primary-light)
+                );
+                color: var(--white);
+                border: none;
+                padding: 12px 20px;
+                border-radius: 25px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .nav-back-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(5, 104, 166, 0.3);
+            }
+
+            /* Hero Section */
+            .hero-section {
+                min-height: 100vh;
+                position: relative;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+            }
+
+            .hero-video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 1;
+            }
+
+            .hero-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgb(1, 17, 38);
+                z-index: 2;
+            }
+
+            .hero-content {
+                position: relative;
+                z-index: 3;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+                align-items: center;
+            }
+
+            .hero-title {
+                font-size: 4rem;
+                font-weight: 800;
+                color: var(--white);
+                margin-bottom: 20px;
+                line-height: 1.1;
+            }
+
+            .hero-subtitle {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                font-size: 1.5rem;
+                color: var(--white);
+                margin-bottom: 30px;
+            }
+
+            .logo-icon {
+                width: 50px;
+                height: 50px;
+                background: var(--primary-light);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--white);
+                font-size: 1.2rem;
+            }
+
+            .hero-description {
+                font-size: 1.2rem;
+                color: rgba(255, 255, 255, 0.8);
+                margin-bottom: 40px;
+            }
+
+            .hero-visual {
+                height: 400px;
+            }
+
+            /* Section Headers */
+            .section-header {
+                text-align: center;
+                margin-bottom: 60px;
+            }
+
+            .section-badge {
+                background: var(--primary-light);
+                color: var(--white);
+                padding: 8px 20px;
+                border-radius: 25px;
+                font-size: 0.9rem;
+                font-weight: 600;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+
+            .section-header h2,
+            .section-header h3 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--primary-dark);
+                margin-bottom: 15px;
+            }
+
+            .section-header p {
+                font-size: 1.1rem;
+                color: rgba(13, 13, 13, 0.7);
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            /* About Description */
+            .about-description {
+                padding: 120px 0;
+                background: var(--white);
+            }
+
+            .description-text {
+                max-width: 800px;
+                margin: 0 auto 60px;
+                text-align: center;
+            }
+
+            .description-text p {
+                font-size: 1.1rem;
+                line-height: 1.8;
+                margin-bottom: 25px;
+                color: rgba(13, 13, 13, 0.8);
+            }
+
+            .stats-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 40px;
+                margin-top: 60px;
+            }
+
+            .stat-item {
+                text-align: center;
+                padding: 30px;
+                background: var(--background);
+                border-radius: 15px;
+                transition: all 0.3s ease;
+            }
+
+            .stat-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 30px rgba(5, 104, 166, 0.1);
+            }
+
+            .stat-number {
+                font-size: 3rem;
+                font-weight: 800;
+                color: var(--primary-blue);
+                margin-bottom: 10px;
+            }
+
+            .stat-label {
+                font-size: 1.1rem;
+                color: var(--text-dark);
+                font-weight: 500;
+            }
+
+            /* Experience Section */
+            .experience-section {
+                padding: 120px 0;
+                background: var(--background);
+            }
+
+            .experience-content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 80px;
+                align-items: center;
+            }
+
+            .experience-text .section-header {
+                text-align: left;
+                margin-bottom: 30px;
+            }
+
+            .experience-text p {
+                font-size: 1.1rem;
+                line-height: 1.8;
+                color: rgba(13, 13, 13, 0.8);
+                margin-bottom: 40px;
+            }
+
+            .experience-highlights {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .highlight-item {
+                display: flex;
+                align-items: center;
+                /* gap: 15px; */
+                height: 5vh;
+                width: 30vw;
+                border-left: 3px solid var(--primary-light);
+                padding-left: 20px;
+                font-weight: 500;
+            }
+
+/* 
+            .buun {
+                background-color: var(--white);
+                border: 1px solid var(--primary-blue);
+
+            } */
+            .hoverbun :hover{
+                scale: 1.05;
+                background-color: var(--primary-blue);
+                color: var(--white);
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
 
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        /* position: relative; */
-    }
+            .collage-container {
+                position: relative;
+                cursor: pointer;
+                border-radius: 20px;
+                overflow: hidden;
+                transition: all 0.3s ease;
+            }
 
-    main {
-        font-family: 'Arial', sans-serif;
-        color: #F2F2F2;
-        position: relative;
-        background-color: #011126;
-    }
+            .collage-container:hover {
+                transform: scale(1.02);
+                box-shadow: 0 15px 40px rgba(5, 104, 166, 0.2);
+            }
 
-    .header { 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px;
-        height: 8vh;
-        background-color: #011126ee;
-        color: #F2F2F2;
-        position: fixed;
-        z-index: 1000;
-        width: 100vw;
-        top: 0px;
-        left: 0px;
-        /* display: block; */
-    }
+            .collage-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                padding: 20px;
+                background: var(--white);
+                border-radius: 20px;
+            }
 
-    .header h1{
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    
-    #homepage_logo {
-        width: auto;
-        height: 6vh;
-        object-fit: contain;
-    }
+            .collage-item {
+                height: 120px;
+                background: linear-gradient(
+                    135deg,
+                    var(--primary-blue),
+                    var(--primary-light)
+                );
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+            }
 
-    .line{
-        width: 100%;
-        height: 2px;
-        background-color: #F2F2F2;
-        margin: 0;
-        position: fixed;
-        top: 8vh;
-    }
+            .collage-item::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(
+                    45deg,
+                    transparent 30%,
+                    rgba(255, 255, 255, 0.1) 50%,
+                    transparent 70%
+                );
+                animation: shimmer 3s infinite;
+            }
 
-    .maincontent{
-        height: auto;
-        width: 100vw;
-        padding: 40px 20px 90px 20px;
+            @keyframes shimmer {
+                0% {
+                    transform: translateX(-100%);
+                }
+                100% {
+                    transform: translateX(100%);
+                }
+            }
 
-    }
+            .collage-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(1, 17, 38, 0.8);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: var(--white);
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
 
-    .experience{
-        display: flex;
-        /* justify-content: space-around; */
-        /* align-items: center; */
-        width: 100vw;
-        height: auto;
-        padding: 20px;
-        gap: 40px;
-    }
+            .collage-container:hover .collage-overlay {
+                opacity: 1;
+            }
 
-    #experience_pic{
-        width: 30vw;
-        /* height: 27vh; */
-        object-fit: cover;
-    }
+            .collage-overlay i {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
 
-    .exp_left{
-        /* margin: 10px; */
-    }
+            /* Alumni Section */
+            .alumni-section {
+                padding: 120px 0;
+                background: var(--white);
+            }
 
+            .alumni-container {
+                position: relative;
+            }
 
-    .al_scroll{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow-x: auto;
-        /* width: 100%; */
-        /* height: auto; */
-        padding: 20px;
-        /* position: relative; */
-        gap: 20px;
-    }
+            .alumni-scroll {
+                display: flex;
+                gap: 30px;
+                overflow-x: auto;
+                padding: 20px 0;
+                scroll-behavior: smooth;
+            }
 
-    .al{
-        width: 100%;
-        padding: 20px;
-    }
+            .alumni-card {
+                min-width: 280px;
+                background: var(--background);
+                border-radius: 20px;
+                padding: 30px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                border: 2px solid transparent;
+            }
 
-    .al_scroll div{
-        /* display: flex; */
-        border: 1px solid #F2F2F2;
-        height: 40vh;
-        min-width: 20vw;
-        /* position: f; */
-        scroll-behavior: smooth;
-        scrollbar-width: none;
+            .alumni-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 40px rgba(5, 104, 166, 0.15);
+                border-color: var(--primary-light);
+            }
 
-    }
+            .alumni-image {
+                height: 150px;
+                border-radius: 15px;
+                margin-bottom: 20px;
+                position: relative;
+                overflow: hidden;
+                background: linear-gradient(
+                    135deg,
+                    var(--primary-dark),
+                    var(--primary-blue)
+                );
+            }
 
-    .dump {
-        padding: 20px;
-    }
-    
-    .picdump{
-        display: flex;
-        gap: 20px;
-        padding: 10px;
-        flex-wrap: wrap;
-    }
+            .alumni-gradient {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(
+                    135deg,
+                    var(--primary-blue),
+                    var(--primary-light)
+                );
+                opacity: 0.8;
+            }
 
-    .dump_item{
-        width: 40vh;
-        height: 30vh;
-        border: 1px solid #F2F2F2;
+            .alumni-year {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 2rem;
+                font-weight: 800;
+                color: var(--white);
+            }
 
-    }
+            .alumni-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
 
-    .outnav{
-        display: block;
-        margin: 8vh;
-    }
+            .alumni-content h4 {
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: var(--primary-dark);
+                margin-bottom: 5px;
+            }
 
-</style>
+            .alumni-content p {
+                color: rgba(13, 13, 13, 0.6);
+                font-size: 0.9rem;
+            }
+
+            .alumni-arrow {
+                background: var(--primary-light);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--white);
+                transition: all 0.3s ease;
+            }
+
+            .alumni-card:hover .alumni-arrow {
+                background: var(--primary-blue);
+                transform: scale(1.1);
+            }
+
+            .scroll-navigation {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                gap: 10px;
+            }
+
+            .scroll-btn {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: var(--primary-light);
+                border: none;
+                color: var(--white);
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .scroll-btn:hover {
+                background: var(--primary-blue);
+                transform: scale(1.1);
+            }
+
+            /* Memory Section */
+            .memory-section {
+                padding: 120px 0;
+                background: var(--background);
+            }
+
+            .memory-content {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                gap: 80px;
+                align-items: start;
+            }
+
+            .memory-text .section-header {
+                text-align: left;
+                margin-bottom: 30px;
+            }
+
+            .memory-text p {
+                font-size: 1.1rem;
+                line-height: 1.8;
+                color: rgba(13, 13, 13, 0.8);
+            }
+
+            .memory-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+            }
+
+            .memory-item {
+                height: 200px;
+                background: linear-gradient(
+                    135deg,
+                    var(--primary-blue),
+                    var(--primary-light)
+                );
+                border-radius: 15px;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .memory-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(1, 17, 38, 0.8);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: var(--white);
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+
+            .memory-item:hover .memory-overlay {
+                opacity: 1;
+            }
+
+            .memory-overlay i {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 80px 0 40px;
+                background: var(--primary-dark);
+                color: var(--white);
+            }
+
+            .footer-content {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 60px;
+                margin-bottom: 40px;
+            }
+
+            .footer-brand p {
+                font-size: 1rem;
+                color: rgba(255, 255, 255, 0.7);
+                max-width: 400px;
+            }
+
+            .footer-logo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            .footer-logo i {
+                color: var(--primary-light);
+            }
+
+            .footer-links {
+                display: flex;
+                gap: 60px;
+            }
+
+            .footer-section h4 {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+                color: var(--white);
+            }
+
+            .footer-section ul {
+                list-style: none;
+            }
+
+            .footer-section ul li {
+                margin-bottom: 10px;
+            }
+
+            .footer-section ul li a {
+                color: rgba(255, 255, 255, 0.7);
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            .footer-section ul li a:hover {
+                color: var(--primary-light);
+            }
+
+            .social-links {
+                display: flex;
+                gap: 15px;
+            }
+
+            .social-link {
+                width: 40px;
+                height: 40px;
+                background: var(--primary-light);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--white);
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            .social-link:hover {
+                background: var(--primary-blue);
+                transform: scale(1.1);
+            }
+        </style>
+    </body>
+</html>
