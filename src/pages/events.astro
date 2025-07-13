@@ -1,0 +1,391 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <div class="container">
+    <!-- Hero Section with Animation -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1 class="title">Team Avions</h1>
+        <p class="subtitle">Soaring to new heights</p>
+      </div>
+    </header>
+
+    <!-- Events Section (based on mockup made by hemaksh) -->
+    <section class="section events-section">
+      <h2 class="section-title">Events</h2>
+      <div class="events-container">
+        <!-- Event Item  -->
+        <div class="event-item card">
+          <div class="event-image">
+            <!--   get rid of the placeholder and add an img src  -->
+            <div class="image-placeholder">Proof of event picture</div>
+          </div>
+          <div class="event-content content">
+            <h3 class="event-title">Title of event</h3>
+            <p class="event-description">description</p>
+          </div>
+        </div>
+
+       
+        <div class="event-item card">
+          <div class="event-image">
+             <!-- Do this for every image card. add you images in the assests folder before pushing -->
+            <div class="image-placeholder">Proof of event picture</div>
+          </div>
+          <div class="event-content content">
+            <h3 class="event-title">Title of event</h3>
+            <p class="event-description">description</p>
+          </div>
+        </div>
+
+        <div class="event-item card">
+          <div class="event-image">
+            <div class="image-placeholder">Proof of event picture</div>
+          </div>
+          <div class="event-content content">
+            <h3 class="event-title">Title of event</h3>
+            <p class="event-description">description</p>
+          </div>
+        </div>
+
+        <div class="event-item card">
+          <div class="event-image">
+            <div class="image-placeholder">Proof of event picture</div>
+          </div>
+          <div class="event-content content">
+            <h3 class="event-title">Title of event</h3>
+            <p class="event-description">description</p>
+          </div>
+        </div>
+
+        <div class="event-item card">
+          <div class="event-image">
+            <div class="image-placeholder">Proof of event picture</div>
+          </div>
+          <div class="event-content content">
+            <h3 class="event-title">Title of event</h3>
+            <p class="event-description">description</p>
+          </div>
+        </div>
+
+        <!-- Empty space at bottom so that it looks slay -->
+        <div class="event-empty-space"></div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+
+  :root {
+    --dark-blue: #011126;
+    --medium-blue: #0568A6;
+    --light-blue: #0FB2F2;
+    --white: #F2F2F2;
+    --black: #0D0D0D;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--dark-blue), var(--medium-blue));
+    color: var(--white);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 10px 30px rgba(5, 104, 166, 0.3);
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, transparent 20%, var(--dark-blue) 70%);
+    opacity: 0.1;
+    animation: pulse 15s infinite linear;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+  }
+
+  .title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: slideInDown 1s ease-out;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    animation: slideInUp 1s ease-out 0.5s both;
+  }
+
+
+  .section {
+    margin-bottom: 5rem;
+    animation: fadeIn 1s ease-out;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, var(--medium-blue), var(--light-blue));
+    border-radius: 2px;
+  }
+
+
+  .events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 100%;
+    height: 150px;
+    background: var(--white);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 3px 1px #00000088;
+    cursor: pointer;
+    border-radius: 4px;
+    animation: fadeInUp 0.8s ease-out both;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(1, 17, 38, 0.3);
+  }
+
+  .card .content {
+    border-radius: 4px;
+    background: var(--white);
+    height: 100%;
+    z-index: 1;
+    padding: 1rem;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: padding 0.3s ease;
+  }
+
+  .card:hover .content {
+    padding-left: 1.5rem;
+  }
+
+  .event-image {
+    width: 200px;
+    height: 150px;
+    background-color: #e0e0e0;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease, width 0.3s ease;
+  }
+
+  .card:hover .event-image {
+    transform: scale(1.05);
+  }
+  .content::before {
+    opacity: 0;
+    transition: opacity 300ms;
+    content: " ";
+    display: block;
+    background: white;
+    width: 5px;
+    height: 50px;
+    position: absolute;
+    filter: blur(50px);
+    overflow: hidden;
+  }
+
+  .card:hover .content::before {
+    opacity: 1;
+  }
+
+  .card::before {
+    opacity: 0;
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 360px;
+    background: linear-gradient(var(--medium-blue), var(--light-blue));
+    transition: opacity 300ms;
+    animation: rotation_9018 8000ms infinite linear;
+    animation-play-state: paused;
+  }
+
+  .card:hover::before {
+    opacity: 1;
+    animation-play-state: running;
+  }
+
+  .card::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ffffff33;
+    backdrop-filter: blur(50px);
+  }
+
+  .event-image {
+    width: 200px;
+    height: 150px;
+    background-color: #e0e0e0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .event-content {
+    flex: 1;
+    z-index: 2;
+  }
+
+  .event-title {
+    font-size: 1.2rem;
+    color: var(--black);
+    margin-bottom: 0.5rem;
+  }
+
+  .event-description {
+    color: var(--black);
+    font-size: 0.9rem;
+  }
+
+  .event-empty-space {
+    height: 100px;
+    width: 100%;
+    background-color: #e0e0e0;
+    margin-top: 1rem;
+  }
+
+  @keyframes rotation_9018 {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 3rem;
+    }
+
+    .card {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .event-image {
+      width: 100%;
+      height: 180px;
+    }
+  }
+</style>
