@@ -1,7 +1,7 @@
 ---
-
+import Home from "../pages/Home.astro";
+import al25 from "../pages/aluminis/al25.astro";
 ---
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -17,10 +17,12 @@
                 <div class="nav-logo">
                     <span>About us</span>
                 </div>
-                <button class="nav-back-btn" onclick="goBack()">
-                    <i class="fas fa-arrow-left"></i>
-                    <span>Home</span>
-                </button>
+                <a href="/Home">
+                    <div class="nav-back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Home</span>
+                    </div>
+                </a>
             </div>
         </nav>
 
@@ -69,7 +71,7 @@
                         </div>
                         <div class="stats-grid">
                             <div class="stat-item">
-                                <div class="stat-number">num</div>
+                                <div class="stat-number">Number</div>
                                 <div class="stat-label">Quality</div>
                             </div>
                             <div class="stat-item">
@@ -97,11 +99,7 @@
                                 <h3>Experience Excellence</h3>
                             </div>
                             <p>
-                                From workshops and seminars to hands-on projects
-                                and industry collaborations, our experience
-                                spans across various domains. We pride ourselves
-                                on creating opportunities that matter and
-                                experiences that last a lifetime.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat minus excepturi eaque omnis rem mollitia, cupiditate, doloremque aut corrupti incidunt quidem ipsa deleniti illum. Vitae voluptas nam architecto optio, esse debitis rerum quod harum voluptatem?
                             </p>
                             <div class="experience-highlights">
                                 <div class="hoverbun">
@@ -110,19 +108,16 @@
                                         <div class="highlight-item">
                                             Innovation Workshops
                                         </div>
-                                        <a href="">
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                                 <div class="hoverbun">
-
-                                    <div class="highlight-item" >
-                                        
-                                        Mentorship Programs
-                                    </div>
-                                </a>
-                            </div>
+                                    <a href="">
+                                        <div class="highlight-item" >
+                                            Mentorship Programs
+                                        </div>
+                                    </a>
+                                </div>
                                 <div class="hoverbun">
-
                                     <a href="">
                                         <div class="highlight-item" >
                                             Competition Success
@@ -168,58 +163,61 @@
                     </div>
                     <div class="alumni-container">
                         <div class="alumni-scroll">
-                            <div
-                                class="alumni-card"
-                                onclick="viewMembers('2025')"
-                            >
-                                <div class="alumni-image">
-                                    <div class="alumni-gradient"></div>
-                                    <div class="alumni-year">2025</div>
+                            <a href="/aluminis/al25">
+                                <div class="alumni-card">
+                                    <div class="alumni-image">
+                                        <div class="alumni-gradient"></div>
+                                        <div class="alumni-year">2025</div>
+                                    </div>
+                                    <div class="alumni-content">
+                                        <h4>Avions '25</h4>
+                                    </div>
                                 </div>
-                                <div class="alumni-content">
-                                    <h4>Avions '25</h4>
-                                    <p>Current Leaders</p>
+                            </a>
+                            <a href="/aluminis/al24">
+                                <div class="alumni-card">
+                                    <div class="alumni-image">
+                                        <div class="alumni-gradient"></div>
+                                        <div class="alumni-year">2024</div>
+                                    </div>
+                                    <div class="alumni-content">
+                                        <h4>Avions '24</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div
-                                class="alumni-card"
-                                onclick="viewMembers('2024')"
-                            >
-                                <div class="alumni-image">
-                                    <div class="alumni-gradient"></div>
-                                    <div class="alumni-year">2024</div>
+                            </a>
+                            <a href="/aluminis/al23">
+                                <div class="alumni-card">
+                                    <div class="alumni-image">
+                                        <div class="alumni-gradient"></div>
+                                        <div class="alumni-year">2023</div>
+                                    </div>
+                                    <div class="alumni-content">
+                                        <h4>Avions '23</h4>
+                                    </div>
                                 </div>
-                                <div class="alumni-content">
-                                    <h4>Avions '24</h4>
-                                    <p>Recent Graduates</p>
+                            </a>
+                            <a href="/aluminis/al22">
+                                <div class="alumni-card">
+                                    <div class="alumni-image">
+                                        <div class="alumni-gradient"></div>
+                                        <div class="alumni-year">2022</div>
+                                    </div>
+                                    <div class="alumni-content">
+                                        <h4>Avions '22</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div
-                                class="alumni-card"
-                                onclick="viewMembers('2023')"
-                            >
-                                <div class="alumni-image">
-                                    <div class="alumni-gradient"></div>
-                                    <div class="alumni-year">2023</div>
+                            </a>
+                            <a href="/aluminis/al21">
+                                <div class="alumni-card">
+                                    <div class="alumni-image">
+                                        <div class="alumni-gradient"></div>
+                                        <div class="alumni-year">2021</div>
+                                    </div>
+                                    <div class="alumni-content">
+                                        <h4>Avions '21</h4>
+                                    </div>
                                 </div>
-                                <div class="alumni-content">
-                                    <h4>Avions '23</h4>
-                                    <p>Industry Professionals</p>
-                                </div>
-                            </div>
-                            <div
-                                class="alumni-card"
-                                onclick="viewMembers('2022')"
-                            >
-                                <div class="alumni-image">
-                                    <div class="alumni-gradient"></div>
-                                    <div class="alumni-year">2022</div>
-                                </div>
-                                <div class="alumni-content">
-                                    <h4>Avions '22</h4>
-                                    <p>Founding Members</p>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -248,20 +246,15 @@
                                 </div>
                             </div>
                             <a href="">
-
-                                <div
-                                class="memory-item"
-                                onclick="openMemory('Freshers Welcome')">
-                                <div class="memory-overlay">
-                                    <i class="fas"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M21 16V14L13 9V3.5C13 2.67 12.33 2 11.5 2S10 2.67 10 3.5V9L2 14V16L10 13.5V19L8 20.5V22L11.5 21L15 22V20.5L13 19V13.5L21 16Z" fill="currentColor"/>
-                                    </svg>
-                                </i> <!-- Plane -->
-                                
-                                <span>DDC-25</span>
-                            </div>
-                        </div>
-                    </a>
+                                <div class="memory-item" onclick="openMemory('Freshers Welcome')">
+                                    <div class="memory-overlay">
+                                        <i class="fas"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 16V14L13 9V3.5C13 2.67 12.33 2 11.5 2S10 2.67 10 3.5V9L2 14V16L10 13.5V19L8 20.5V22L11.5 21L15 22V20.5L13 19V13.5L21 16Z" fill="currentColor"/>
+                                        </svg></i> <!-- Plane -->
+                                        <span>DDC-25</span>
+                                    </div>
+                                </div>
+                            </a>
                     <a href="">
 
                         <div

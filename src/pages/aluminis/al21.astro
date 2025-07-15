@@ -1,0 +1,383 @@
+---
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Avions Alumni | Avions</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span>Avions '21</span>
+                </div>
+                <a href="/About">
+                    <div class="nav-back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Back</span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-visual">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Avions Team" class="team-image"/>
+                    </div>
+                    <div class="hero-text">
+                        <h1 class="hero-title">Avions '21</h1>
+                        <div class="hero-description">
+                            <div class="description-section">
+                                <strong>Core:</strong>
+                                <p>President: </p>
+                                <p>Vice President: </p>
+                                <p>Head of Social Media & Marketing: </p>
+                                <p>Head of Finance: </p>
+                                <p>Head of Inventory & Logistics: </p>
+                            </div>
+                            <div class="description-section">
+                                <strong>Members:</strong>
+                                <p>25+ dedicated engineers and innovators</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-brand">
+                            <div class="footer-logo">
+                                <i class="fas fa-plane"></i>
+                                <span>Avions</span>
+                            </div>
+                            <p>
+                                We think, We fly. We rule the sky.
+                            </p>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-section">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="/Home">Home</a></li>
+                                    <li><a href="/About">About</a></li>
+                                    <li><a href="/events">Events</a></li>
+                                    <li><a href="/projects">Projects</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-section">
+                                <h4>Connect</h4>
+                                <div class="social-links">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <style>
+            :root {
+                --primary-dark: #011126;
+                --primary-blue: #0568a6;
+                --primary-light: #0fb2f2;
+                --background: #f2f2f2;
+                --text-dark: #0d0d0d;
+                --white: #ffffff;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Inter", sans-serif;
+                background-color: var(--background);
+                color: var(--text-dark);
+                line-height: 1.6;
+                overflow-x: hidden;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            /* Navigation */
+            .navbar {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background: rgba(1, 17, 38, 0.7);
+                backdrop-filter: blur(10px);
+                z-index: 1000;
+                padding: 15px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .nav-logo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--white);
+            }
+
+            .nav-logo i {
+                color: var(--primary-light);
+            }
+
+            .nav-back-btn {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
+                color: var(--white);
+                border: none;
+                padding: 12px 20px;
+                border-radius: 25px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .nav-back-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(5, 104, 166, 0.3);
+            }
+
+            /* Hero Section */
+            .hero-section {
+                min-height: 100vh;
+                position: relative;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                padding-top: 80px;
+            }
+
+            .hero-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
+                z-index: 1;
+            }
+
+            .hero-content {
+                position: relative;
+                z-index: 3;
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 0 20px;
+                display: grid;
+                grid-template-columns: 1.2fr 1fr;
+                gap: 60px;
+                align-items: center;
+            }
+
+            .hero-visual {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .team-image {
+                width: 100%;
+                max-width: 700px;
+                height: auto;
+                border-radius: 20px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                transition: all 0.3s ease;
+            }
+
+            .team-image:hover {
+                transform: scale(1.02);
+                box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+                font-weight: 800;
+                color: var(--white);
+                margin-bottom: 20px;
+                line-height: 1.1;
+            }
+
+            .hero-description {
+                font-size: 1.1rem;
+                color: rgba(255, 255, 255, 0.9);
+                margin-bottom: 25px;
+                line-height: 1.7;
+            }
+
+            .description-section {
+                margin-bottom: 20px;
+            }
+
+            .description-section strong {
+                color: var(--primary-light);
+                font-size: 1.2rem;
+                font-weight: 600;
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            .description-section p {
+                color: rgba(255, 255, 255, 0.9);
+                font-size: 1rem;
+                line-height: 1.6;
+                margin: 0;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 80px 0 40px;
+                background: var(--primary-dark);
+                color: var(--white);
+            }
+
+            .footer-content {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 60px;
+                margin-bottom: 40px;
+            }
+
+            .footer-brand p {
+                font-size: 1rem;
+                color: rgba(255, 255, 255, 0.7);
+                max-width: 400px;
+            }
+
+            .footer-logo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            .footer-logo i {
+                color: var(--primary-light);
+            }
+
+            .footer-links {
+                display: flex;
+                gap: 60px;
+            }
+
+            .footer-section h4 {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+                color: var(--white);
+            }
+
+            .footer-section ul {
+                list-style: none;
+            }
+
+            .footer-section ul li {
+                margin-bottom: 10px;
+            }
+
+            .footer-section ul li a {
+                color: rgba(255, 255, 255, 0.7);
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            .footer-section ul li a:hover {
+                color: var(--primary-light);
+            }
+
+            .social-links {
+                display: flex;
+                gap: 15px;
+            }
+
+            .social-link {
+                width: 40px;
+                height: 40px;
+                background: var(--primary-light);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--white);
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            .social-link:hover {
+                background: var(--primary-blue);
+                transform: scale(1.1);
+            }
+
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .hero-content {
+                    grid-template-columns: 1fr;
+                    gap: 40px;
+                    text-align: center;
+                    max-width: 100%;
+                }
+
+                .team-image {
+                    max-width: 100%;
+                }
+
+                .hero-title {
+                    font-size: 2.5rem;
+                }
+
+                .footer-content {
+                    grid-template-columns: 1fr;
+                    gap: 40px;
+                }
+
+                .footer-links {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+            }
+        </style>
+    </body>
+</html> 
